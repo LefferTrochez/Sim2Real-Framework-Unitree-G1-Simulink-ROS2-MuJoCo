@@ -134,13 +134,13 @@ Planned future developments include:
 ## Technologies Used
 
 <p align="center">
-  <img src="images/MatlabSimulink.jpg" alt="MATLAB and Simulink" height="50">
+  <img src="images/MatlabSimulink.jpg" alt="MATLAB and Simulink" height="45">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/Mujoco.jpeg" alt="MuJoCo" height="45">
+  <img src="images/Mujoco.jpeg" alt="MuJoCo" height="40">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/Unitree.png" alt="Unitree" height="45">
+  <img src="images/Unitree.png" alt="Unitree" height="40">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/ROS.jpg" alt="ROS 2" height="45">
+  <img src="images/ROS.jpg" alt="ROS 2" height="40">
 </p>
 
 ---
@@ -166,7 +166,10 @@ Bogotá D.C., Colombia
   <a href="https://scholar.google.com/citations?user=Ve1E4AEAAAAJ&hl=es&oi=ao">
     <img src="images/GoogleScholar.png" alt="Google Scholar" height="28">
   </a>
-
+  &nbsp;
+  <a href="https://orcid.org/0009-0002-5321-7652">
+    <img src="images/ORCID.png" alt="ORCID" height="28">
+  </a>
 ---
 
 ## Citation
