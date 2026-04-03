@@ -146,8 +146,8 @@ This project is built around the following technologies:
 
 ## Contact
 
-**Leffer Trochez**  
-Electronic Engineer and M.Sc. in Electronic and Computer Engineering
+Leffer Trochez
+Electronic Engineer and M.Sc. in Electronic and Computer Engineering  
 Universidad de los Andes  
 Faculty of Engineering  
 Department of Electrical and Electronic Engineering  
@@ -156,8 +156,10 @@ Bogotá D.C., Colombia
 
 - **Email:** [l.trochez@uniandes.edu.co](mailto:l.trochez@uniandes.edu.co)
 - **LinkedIn:** [leffer-trochez](https://www.linkedin.com/in/leffer-trochez/)
-- **GitHub:** [LefferTrochez](https://github.com/LefferTrochez)
+- **Google Scholar:** [Leffer Trochez](https://scholar.google.com/citations?user=Ve1E4AEAAAAJ&hl=es&oi=ao)
 - **ORCID:** [0009-0002-5321-7652](https://orcid.org/0009-0002-5321-7652)
+
+For academic collaborations, technical questions, or research-related inquiries about this framework, please use the contact information above.
 
 ---
 
@@ -165,7 +167,7 @@ Bogotá D.C., Colombia
 
 If you use this repository in academic work, research projects, technical reports, or derivative software developments, please cite it appropriately.
 
-This repository includes a `CITATION.cff` file so that GitHub can expose a standard citation format through the **Cite this repository** feature. A DOI-based citation will be added once a public release is archived through Zenodo.
+This repository includes a `CITATION.cff` file in the root of the repository so that GitHub can expose a standard citation format through the Cite this repository feature. Once a public release is archived through Zenodo, this section can be updated with the corresponding DOI-based citation.
 
 ### How to cite
 
@@ -184,14 +186,13 @@ Until a DOI is available, the repository can be cited as software in the followi
 
 ### Citation note
 
-If this framework contributes to a thesis, paper, report, or software-based research output, please cite the repository and, once available, its DOI-linked release record.
+GitHub currently supports citation outputs based on `CITATION.cff`, including APA and BibTeX. If this framework contributes to a thesis, paper, report, or software-based research output, please cite the repository and, once available, its DOI-linked release record.
 
 ---
 
 ## License
 
-This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for the full license text.
-
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for the full license text.
 
 ---
 
