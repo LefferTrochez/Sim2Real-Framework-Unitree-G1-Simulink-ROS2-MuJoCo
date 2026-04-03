@@ -136,11 +136,11 @@ Planned future developments include:
 <p align="center">
   <img src="images/MatlabSimulink.jpg" alt="MATLAB and Simulink" height="50">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/Mujoco.jpeg" alt="MuJoCo" height="50">
+  <img src="images/Mujoco.jpeg" alt="MuJoCo" height="45">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/Unitree.png" alt="Unitree" height="50">
+  <img src="images/Unitree.png" alt="Unitree" height="45">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/ROS.jpg" alt="ROS 2" height="50">
+  <img src="images/ROS.jpg" alt="ROS 2" height="45">
 </p>
 
 ---
