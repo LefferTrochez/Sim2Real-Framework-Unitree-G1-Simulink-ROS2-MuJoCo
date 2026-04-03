@@ -134,13 +134,13 @@ Planned future developments include:
 ## Technologies Used
 
 <p align="center">
-  <img src="images/MatlabSimulink.jpg" alt="MATLAB and Simulink" width="200">
+  <img src="images/MatlabSimulink.jpg" alt="MATLAB and Simulink" height="90" valign="middle">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/Mujoco.jpeg" alt="MuJoCo" width="120">
+  <img src="images/Mujoco.jpeg" alt="MuJoCo" height="90" valign="middle">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/Unitree.png" alt="Unitree" width="120">
+  <img src="images/Unitree.png" alt="Unitree" height="90" valign="middle">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/ROS.jpg" alt="ROS 2" width="120">
+  <img src="images/ROS.jpg" alt="ROS 2" height="90" valign="middle">
 </p>
 
 ---
@@ -209,6 +209,8 @@ This project also builds upon or interacts with important technologies and platf
 - **MuJoCo**
 
 All third-party software, SDKs, libraries, and dependencies remain subject to their respective licenses and terms of use.
+
+---
 
 ## References
 
