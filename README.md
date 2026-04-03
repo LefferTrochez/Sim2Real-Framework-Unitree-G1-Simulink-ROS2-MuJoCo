@@ -61,13 +61,14 @@ This design keeps the overall workflow modular, structured, and reusable.
 The repository is organized as follows:
 
 ```text
-.
+
 ├── images/                # Figures used in the documentation and README
 └── material/              # Main technical folder of the project
     ├── examples/          # Example files built on top of the original Sim2Real framework (ankle-motion example)
     ├── MuJoCo files/      # MuJoCo simulation resources, XML robot model, meshes, and related files
     ├── ROS 2 files/       # Custom Unitree ROS 2 messages and scripts for message generation/integration
     └── Sim2Real files/    # Core reusable Sim2Real base, Variant Subsystem, and support files
+```
 
 ---
 
