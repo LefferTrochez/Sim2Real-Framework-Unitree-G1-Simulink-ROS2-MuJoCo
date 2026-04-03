@@ -134,13 +134,13 @@ Planned future developments include:
 ## Technologies Used
 
 <p align="center">
-  <img src="images/MatlabSimulink.jpg" alt="MATLAB and Simulink" height="90" valign="middle">
+  <img src="images/MatlabSimulink.jpg" alt="MATLAB and Simulink" height="70">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/Mujoco.jpeg" alt="MuJoCo" height="90" valign="middle">
+  <img src="images/Mujoco.jpeg" alt="MuJoCo" height="70">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/Unitree.png" alt="Unitree" height="90" valign="middle">
+  <img src="images/Unitree.png" alt="Unitree" height="70">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/ROS.jpg" alt="ROS 2" height="90" valign="middle">
+  <img src="images/ROS.jpg" alt="ROS 2" height="70">
 </p>
 
 ---
@@ -197,16 +197,16 @@ This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE
 
 ## Acknowledgments
 
-The author would like to express sincere gratitude to [**Manoj Vasudevan**](https://vmanoj1996.github.io/) for having planted the initial seed of this work through the MuJoCo Simulink Blockset, which provided an important foundation and early inspiration for the development of this framework.
+The author would like to express sincere gratitude to [Manoj Vasudevan](https://vmanoj1996.github.io/) for having planted the initial seed of this work through the MuJoCo Simulink Blockset, which provided an important foundation and early inspiration for the development of this framework.
 
-The author also gratefully acknowledges [**Álvaro Achury**](https://academia.uniandes.edu.co/AcademyCv/au.achury33), leader of the laboratories and caretaker of the humanoid robot platform at Universidad de los Andes (**AURA**), for his valuable assistance in the handling and operation of the real robot platform.
+The author also gratefully acknowledges [Álvaro Achury](https://academia.uniandes.edu.co/AcademyCv/au.achury33), leader of the laboratories and caretaker of the humanoid robot platform at Universidad de los Andes (AURA), for his valuable assistance in the handling and operation of the real robot platform.
 
 This project also builds upon or interacts with important technologies and platforms, including:
 
-- **Unitree Robotics**
-- **MathWorks**
-- **ROS 2**
-- **MuJoCo**
+- Unitree Robotics
+- MathWorks
+- ROS 2
+- MuJoCo
 
 All third-party software, SDKs, libraries, and dependencies remain subject to their respective licenses and terms of use.
 
@@ -216,18 +216,18 @@ All third-party software, SDKs, libraries, and dependencies remain subject to th
 
 This project builds upon the following software tools, repositories, and official resources:
 
-1. **Google DeepMind**. *MuJoCo Documentation*. Official documentation website. Available at: https://mujoco.readthedocs.io/
+1. Google DeepMind. *MuJoCo Documentation*. Official documentation website. Available at: https://mujoco.readthedocs.io/
 
-2. **Zakka, K., Tassa, Y., and MuJoCo Menagerie Contributors**. *MuJoCo Menagerie: A collection of high-quality simulation models for MuJoCo*. GitHub repository, 2022. Available at: https://github.com/google-deepmind/mujoco_menagerie
+2. Zakka, K., Tassa, Y., and MuJoCo Menagerie Contributors. *MuJoCo Menagerie: A collection of high-quality simulation models for MuJoCo*. GitHub repository, 2022. Available at: https://github.com/google-deepmind/mujoco_menagerie
 
-3. **MathWorks**. *MATLAB Documentation*. Official documentation website. Available at: https://www.mathworks.com/help/matlab/index.html
+3. MathWorks. *MATLAB Documentation*. Official documentation website. Available at: https://www.mathworks.com/help/matlab/index.html
 
-4. **MathWorks**. *Simulink Documentation*. Official documentation website. Available at: https://www.mathworks.com/help/simulink/index.html
+4. MathWorks. *Simulink Documentation*. Official documentation website. Available at: https://www.mathworks.com/help/simulink/index.html
 
-5. **MathWorks**. *ROS Toolbox Documentation*. Official documentation website. Available at: https://www.mathworks.com/help/ros/index.html
+5. MathWorks. *ROS Toolbox Documentation*. Official documentation website. Available at: https://www.mathworks.com/help/ros/index.html
 
-6. **MathWorks Robotics**. *Simulink Blockset for MuJoCo Simulator*. GitHub repository. Available at: https://github.com/mathworks-robotics/mujoco-simulink-blockset
+6. MathWorks Robotics. *Simulink Blockset for MuJoCo Simulator*. GitHub repository. Available at: https://github.com/mathworks-robotics/mujoco-simulink-blockset
 
-7. **Unitree Robotics**. *unitree_sdk2*. GitHub repository. Available at: https://github.com/unitreerobotics/unitree_sdk2
+7. Unitree Robotics. *unitree_sdk2*. GitHub repository. Available at: https://github.com/unitreerobotics/unitree_sdk2
 
-8. **Unitree Robotics**. *unitree_ros2*. GitHub repository. Available at: https://github.com/unitreerobotics/unitree_ros2
+8. Unitree Robotics. *unitree_ros2*. GitHub repository. Available at: https://github.com/unitreerobotics/unitree_ros2
