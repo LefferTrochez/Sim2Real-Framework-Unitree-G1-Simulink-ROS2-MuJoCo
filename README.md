@@ -146,7 +146,7 @@ This project is built around the following technologies:
 
 ## Contact
 
-Leffer Trochez
+Leffer Trochez <br>
 Electronic Engineer and M.Sc. in Electronic and Computer Engineering  
 Universidad de los Andes  
 Faculty of Engineering  
@@ -196,26 +196,15 @@ This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE
 
 ## Acknowledgments
 
-This project builds upon or interacts with the following technologies and platforms:
+The author would like to express sincere gratitude to **Manoj Vasudevan** for having planted the initial seed of this work through the MuJoCo Simulink Blockset, which provided an important foundation and early inspiration for the development of this framework.
+
+The author also gratefully acknowledges **Álvaro Achury**, leader of the laboratories and caretaker of the humanoid robot platform at Universidad de los Andes (**AURA**), for his valuable assistance in the handling and operation of the real robot platform.
+
+This project also builds upon or interacts with important technologies and platforms, including:
 
 - **Unitree Robotics**
 - **MathWorks**
 - **ROS 2**
 - **MuJoCo**
 
-The authors also acknowledge the academic and research environment of **Universidad de los Andes** and the support of the **GIAP Research Group**.
-
 All third-party software, SDKs, libraries, and dependencies remain subject to their respective licenses and terms of use.
-
----
-
-## Acknowledgments
-
-This project builds upon or interacts with technologies and platforms such as:
-
-- Unitree Robotics
-- MathWorks
-- ROS 2
-- MuJoCo
-
-All third-party software, SDKs, and dependencies remain subject to their respective licenses and terms of use.
