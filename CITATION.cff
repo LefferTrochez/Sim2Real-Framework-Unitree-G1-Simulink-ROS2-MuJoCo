@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as follows."
+title: "A MATLAB/Simulink-Based Sim2Real Control Framework for the Unitree G1 Using ROS 2 and MuJoCo"
+type: software
+
+authors:
+  - family-names: "Trochez"
+    given-names: "Leffer"
+    email: "l.trochez@uniandes.edu.co"
+    affiliation: "Universidad de los Andes, Faculty of Engineering, Department of Electrical and Electronic Engineering, GIAP Research Group, Bogotá D.C., Colombia"
+    orcid: "https://orcid.org/0009-0002-5321-7652"
+
+  - family-names: "Quijano"
+    given-names: "Nicanor"
+    email: "nquijano@uniandes.edu.co"
+    affiliation: "Universidad de los Andes, Faculty of Engineering, Department of Electrical and Electronic Engineering, GIAP Research Group, Bogotá D.C., Colombia"
+
+  - family-names: "Lopez-Jimenez"
+    given-names: "Jorge"
+    email: "jorgelopez@uniandes.edu.co"
+    affiliation: "Universidad de los Andes, Faculty of Engineering, Department of Electrical and Electronic Engineering, GIAP Research Group, Bogotá D.C., Colombia"
+
+  - family-names: "Rodriguez"
+    given-names: "Carlos Francisco"
+    email: "crodrigu@uniandes.edu.co"
+    affiliation: "Universidad de los Andes, Faculty of Engineering, Department of Mechanical Engineering, Bogotá D.C., Colombia"
+
+version: "1.0"
+date-released: 2026-04-03
+license: "Apache-2.0"
+
+repository-code: "https://github.com/LefferTrochez/Sim2Real-Control-Framework-for-Unitree-G1-Simulink-ROS2-MuJoCo"
+url: "https://github.com/LefferTrochez/Sim2Real-Control-Framework-for-Unitree-G1-Simulink-ROS2-MuJoCo"
+
+keywords:
+  - "MATLAB"
+  - "Simulink"
+  - "MuJoCo"
+  - "ROS 2"
+  - "Unitree G1"
+  - "Sim2Real"
+  - "Humanoid Robotics"
+  - "Control Framework"
