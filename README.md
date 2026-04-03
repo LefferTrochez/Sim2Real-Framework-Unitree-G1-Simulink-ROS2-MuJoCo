@@ -1,18 +1,17 @@
-# Sim2Real-Framework-Unitree-G1-Simulink-ROS2-MuJoCo
-Version 1.0 of a MATLAB/Simulink-based Sim2Real framework for the Unitree G1 humanoid robot, integrating MuJoCo and ROS 2 in a unified workflow for controller development, simulation, visualization, and real-robot deployment.
-
-# Unitree G1 Sim2Real Framework - Simulink, ROS 2 and MuJoCo
+# Sim2Real Framework for the Unitree G1 Using Simulink, ROS 2, and MuJoCo
 
 <p align="center">
-  <img src="Images/Sim2Real_Framework.png" alt="Unitree G1 Sim2Real Framework" width="700">
+  <img src="images/Pipeline.png" alt="Sim2Real Pipeline" width="1000">
 </p>
 
-![Version](https://img.shields.io/badge/version-1.0-blue)
-![MATLAB](https://img.shields.io/badge/MATLAB-Supported-orange)
-![Simulink](https://img.shields.io/badge/Simulink-Based-orange)
-![ROS2](https://img.shields.io/badge/ROS2-Supported-blue)
-![MuJoCo](https://img.shields.io/badge/MuJoCo-Integrated-green)
-![License](https://img.shields.io/badge/license-Apache--2.0-red)
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0-blue" alt="Version">
+  <img src="https://img.shields.io/badge/MATLAB-Supported-orange" alt="MATLAB">
+  <img src="https://img.shields.io/badge/Simulink-Based-orange" alt="Simulink">
+  <img src="https://img.shields.io/badge/ROS2-Supported-blue" alt="ROS 2">
+  <img src="https://img.shields.io/badge/MuJoCo-Integrated-green" alt="MuJoCo">
+  <img src="https://img.shields.io/badge/license-Apache--2.0-red" alt="License">
+</p>
 
 ---
 
@@ -20,49 +19,47 @@ Version 1.0 of a MATLAB/Simulink-based Sim2Real framework for the Unitree G1 hum
 
 1. [Introduction](#introduction)
 2. [Framework Overview](#framework-overview)
-3. [Repository Contents](#repository-contents)
-4. [Technologies Used](#technologies-used)
-5. [Getting Started](#getting-started)
-6. [How to Use](#how-to-use)
-7. [Current Scope](#current-scope)
-8. [Future Work](#future-work)
-9. [Contact](#contact)
-10. [Citation](#citation)
-11. [License](#license)
-12. [Acknowledgments](#acknowledgments)
+3. [Repository Structure](#repository-structure)
+4. [Material Folder Contents](#material-folder-contents)
+5. [Technologies Used](#technologies-used)
+6. [Getting Started](#getting-started)
+7. [How to Use](#how-to-use)
+8. [Current Scope](#current-scope)
+9. [Future Work](#future-work)
+10. [Contact](#contact)
+11. [Citation](#citation)
+12. [License](#license)
+13. [Acknowledgments](#acknowledgments)
 
 ---
 
 ## Introduction
 
-This repository presents **Version 1.0** of a **MATLAB/Simulink-based Sim2Real framework** for the **Unitree G1 humanoid robot**. The framework integrates **MuJoCo simulation** and **ROS 2 communication** into a unified workflow for controller development, simulation-based validation, visualization, and real-robot deployment. It is intended as a research-oriented framework layer for humanoid robotics in MATLAB/Simulink. :contentReference[oaicite:1]{index=1}
+This repository presents **Version 1.0** of a **MATLAB/Simulink-based Sim2Real framework** for the **Unitree G1 humanoid robot**, integrating **MuJoCo** and **ROS 2** within a unified workflow for controller development, simulation-based validation, visualization, and real-robot deployment.
 
-This repository complements the academic work and poster associated with the project and provides the main files required to understand and use the current framework version. The overall objective is to reduce fragmented development workflows by preserving a common high-level control structure across both simulation and real-robot execution. :contentReference[oaicite:2]{index=2}
+The main objective of this repository is to provide a clean and research-oriented framework that preserves a common high-level interface across both simulation and real-robot execution backends. This repository also serves as a technical complement to the associated poster and project dissemination material.
 
 ---
 
 ## Framework Overview
 
-The framework is built around a **Sim2Real Variant Subsystem** that allows the user to switch between two execution backends:
+The core idea of the framework is to allow the user to develop and organize control logic in **MATLAB/Simulink**, validate it in **MuJoCo**, and then transition toward **ROS 2**-based execution on the real **Unitree G1** while maintaining a common structure.
 
-- **MuJoCo**, for simulation-based development and validation
-- **ROS 2**, for communication with the real Unitree G1 robot
+At the center of the repository is a **Sim2Real Variant Subsystem**, which enables switching between:
 
-Both subsystems preserve a compatible input-output structure, so the high-level control logic does not need to be rewritten when switching between simulation and real-robot execution. This is one of the main design principles of the framework. :contentReference[oaicite:3]{index=3}
+- **MuJoCo**, for simulation-based development and testing
+- **ROS 2**, for communication and deployment with the real robot
+
+This design keeps the overall workflow modular, structured, and reusable.
 
 ---
 
-## Repository Contents
+## Repository Structure
 
-Below is a summary of the main files included in this repository:
+The repository is currently organized as follows:
 
 ```text
 .
-├── Sim2Real_variant_subsystem.slx
-├── launcher.mlx
-├── sim2real_config.mlx
-├── bus_definitions.mlx
-├── g1_constraints.mlx
-└── MuJoCo files/
-    ├── unitree_G1.xml
-    └── meshes/
+├── images/
+├── material/
+└── ICRA poster.pdf
