@@ -48,11 +48,11 @@ At the center of the repository is a Sim2Real Variant Subsystem, which enables s
 - **MuJoCo**, for simulation-based development and testing
 - **ROS 2**, for communication and deployment with the real robot
 
-This design keeps the overall workflow modular, structured, and reusable.
-
 <p align="center">
-  <img src="images/Sim2Real.png" alt="Sim2Real Logo" width="500">
+  <img src="images/Sim2Real.png" alt="Sim2Real Logo" width="300">
 </p>
+
+This design keeps the overall workflow modular, structured, and reusable.
 
 ---
 
