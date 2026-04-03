@@ -134,13 +134,13 @@ Planned future developments include:
 ## Technologies Used
 
 <p align="center">
-  <img src="images/MatlabSimulink.jpg" alt="MATLAB and Simulink" width="260">
+  <img src="images/MatlabSimulink.jpg" alt="MATLAB and Simulink" width="200">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/Mujoco.jpeg" alt="MuJoCo" width="180">
+  <img src="images/Mujoco.jpeg" alt="MuJoCo" width="120">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/Unitree.png" alt="Unitree" width="180">
+  <img src="images/Unitree.png" alt="Unitree" width="120">
   &nbsp;&nbsp;&nbsp;
-  <img src="images/ROS.jpg" alt="ROS 2" width="180">
+  <img src="images/ROS.jpg" alt="ROS 2" width="120">
 </p>
 
 ---
@@ -209,3 +209,23 @@ This project also builds upon or interacts with important technologies and platf
 - **MuJoCo**
 
 All third-party software, SDKs, libraries, and dependencies remain subject to their respective licenses and terms of use.
+
+## References
+
+This project builds upon the following software tools, repositories, and official resources:
+
+1. **Google DeepMind**. *MuJoCo Documentation*. Official documentation website. Available at: https://mujoco.readthedocs.io/
+
+2. **Zakka, K., Tassa, Y., and MuJoCo Menagerie Contributors**. *MuJoCo Menagerie: A collection of high-quality simulation models for MuJoCo*. GitHub repository, 2022. Available at: https://github.com/google-deepmind/mujoco_menagerie
+
+3. **MathWorks**. *MATLAB Documentation*. Official documentation website. Available at: https://www.mathworks.com/help/matlab/index.html
+
+4. **MathWorks**. *Simulink Documentation*. Official documentation website. Available at: https://www.mathworks.com/help/simulink/index.html
+
+5. **MathWorks**. *ROS Toolbox Documentation*. Official documentation website. Available at: https://www.mathworks.com/help/ros/index.html
+
+6. **MathWorks Robotics**. *Simulink Blockset for MuJoCo Simulator*. GitHub repository. Available at: https://github.com/mathworks-robotics/mujoco-simulink-blockset
+
+7. **Unitree Robotics**. *unitree_sdk2*. GitHub repository. Available at: https://github.com/unitreerobotics/unitree_sdk2
+
+8. **Unitree Robotics**. *unitree_ros2*. GitHub repository. Available at: https://github.com/unitreerobotics/unitree_ros2
