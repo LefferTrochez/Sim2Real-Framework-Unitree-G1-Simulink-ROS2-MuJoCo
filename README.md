@@ -159,8 +159,6 @@ Bogotá D.C., Colombia
 - **Google Scholar:** [Leffer Trochez](https://scholar.google.com/citations?user=Ve1E4AEAAAAJ&hl=es&oi=ao)
 - **ORCID:** [0009-0002-5321-7652](https://orcid.org/0009-0002-5321-7652)
 
-For academic collaborations, technical questions, or research-related inquiries about this framework, please use the contact information above.
-
 ---
 
 ## Citation
