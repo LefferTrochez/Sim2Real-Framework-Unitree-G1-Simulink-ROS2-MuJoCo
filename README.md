@@ -58,10 +58,37 @@ This design keeps the overall workflow modular, structured, and reusable.
 
 ## Repository Structure
 
-The repository is currently organized as follows:
+The repository is organized as follows:
 
 ```text
 .
 ├── images/
-├── material/
-└── ICRA poster.pdf
+└── material/
+    ├── examples/
+    ├── MuJoCo files/
+    ├── ROS 2 files/
+    └── Sim2Real files/
+
+images/
+
+This folder contains the figures used in the repository documentation, including the main welcome image shown at the top of this README.
+
+material/
+
+This is the main technical folder of the repository. It contains the reusable framework base, the example files, the MuJoCo simulation resources, and the ROS 2 communication files.
+
+examples/
+
+This folder contains example files built on top of the original Sim2Real Variant Subsystem. The current example corresponds to a representative ankle-motion task, intended to show how the base framework can be reused and extended for specific demonstrations.
+
+MuJoCo files/
+
+This folder contains the resources required for MuJoCo-based simulation, including the main XML robot model, the meshes folder, and additional files related to the simulator model and its structure.
+
+ROS 2 files/
+
+This folder contains the custom ROS 2 message package together with the scripts required to create and generate those messages. These files provide the communication base needed by the framework for ROS 2 integration.
+
+Sim2Real files/
+
+This folder contains the main reusable base of the project. It includes the original Sim2Real Variant Subsystem and the core Simulink support files required to initialize and use the framework. Users can take this folder as the starting point for building new examples, controllers, or extensions on top of the original framework structure.
