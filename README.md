@@ -41,9 +41,7 @@ This repository presents Version 1.0 of a MATLAB/Simulink-based Sim2Real framewo
 
 ## Framework Overview
 
-The core idea of the framework is to allow the user to develop and organize control logic in MATLAB/Simulink, validate it in MuJoCo, and then transition toward ROS 2-based execution on the real Unitree G1 while maintaining a common structure.
-
-At the center of the repository is a Sim2Real Variant Subsystem, which enables switching between:
+The core idea of the framework is to allow the user to develop and organize control logic in MATLAB/Simulink, validate it in MuJoCo, and then transition toward ROS 2-based execution on the real Unitree G1 while maintaining a common structure. At the center of the repository is a Sim2Real Variant Subsystem, which enables switching between:
 
 - **MuJoCo:** for simulation-based development and testing
 - **ROS 2:** for communication and deployment with the real robot
@@ -53,6 +51,24 @@ At the center of the repository is a Sim2Real Variant Subsystem, which enables s
 </p>
 
 This design keeps the overall workflow modular, structured, and reusable.
+
+---
+
+## Representative Example: Ankle Motion
+
+This repository includes a representative ankle-motion example used to validate the Sim2Real workflow in a simple and clear way.
+
+In this example, a standard ankle motion command is first tested in MuJoCo and then executed on the real Unitree G1 through the same framework structure. The goal is to show that the same high-level workflow can be reused across simulation and real-robot execution without changing the overall organization of the framework.
+
+This example serves as a minimal demonstration of the following idea:
+
+- design and organize the task in Simulink
+- validate the behavior in MuJoCo
+- transfer the same workflow to the real robot through ROS 2
+
+### Example Video
+
+[Watch the Sim2Real ankle motion video](videos/Sim2Real%20ankle%20motion.mp4)
 
 ---
 
