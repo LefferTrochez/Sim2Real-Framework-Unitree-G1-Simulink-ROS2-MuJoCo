@@ -341,9 +341,7 @@ source_old
 
 Do not delete it if it still contains MuJoCo-related files.
 
-4. If Windows does not allow the rename:
-   - close MATLAB, or
-   - restart the PC
+4. If Windows does not allow the rename close MATLAB or restart the PC.
 
 5. Then run again:
 
@@ -396,10 +394,10 @@ This section clarifies a few implementation details that may raise questions whe
 
 The framework is intended to be executed from the main Simulink model. The expected workflow is:
 
-1. open the model
-2. choose the backend with `RUN_MODE`
-3. update the model with `Ctrl + D`
-4. press Run
+1. Open the model
+2. Choose the backend with `RUN_MODE`
+3. Update the model with `Ctrl + D`
+4. Press Run
 
 The current setup notes explicitly recommend not relying on a separate launcher for the main workflow.
 
@@ -411,22 +409,29 @@ The ROS 2 backend depends on the `unitree_hg` custom message package. Message ge
 
 When running on the real robot:
 
-- make sure the robot is in development mode
-- verify the network configuration
-- verify the relevant ROS 2 topics before running
-- keep the execution focused on the active Simulink workflow
+- Make sure the robot is in development mode
+- Verify the network configuration
+- Verify the relevant ROS 2 topics before running
+- Keep the execution focused on the active Simulink workflow
 
-### Pending Technical Clarifications
+### FAQ on Channel Mapping and Joint Usage
 
-The following implementation questions are important and should be documented in more detail in future revisions of the repository:
+The current framework uses different channel counts depending on the role of each signal group:
 
-- Why are there **29** channels in some parts of the framework?
-- Why are there **35** channels in other parts?
-- Why do **43** channels appear elsewhere?
-- Why are hand-related channels present but currently always zero?
-- Why are waist roll and waist pitch disabled in the current setup?
+1. 29 channels correspond to the actively grouped body joints used by the current control structure: 6 for the left leg, 6 for the right leg, 3 for the waist, 7 for the left arm, and 7 for the right arm.
+2. 35 channels appear in internal constraint-related definitions because the framework reserves additional slots beyond the main 29 body joints, including placeholder entries for joints that are not currently used.
+3. 43 channels appear in the full command interface because the command bus also includes hand-related channels in addition to the body joints.
+4. Hand-related channels are present for interface completeness and future extensibility, but in the current version of the framework they are not actively commanded, so they remain zero.
+5. Waist roll and waist pitch are disabled in the current setup. Their limits are constrained in the framework configuration, and they are also effectively blocked in the MuJoCo XML model itself through near-zero joint ranges. Therefore, enabling them would require modifying both the constraint definitions and the XML model. As a concrete example, if `waist_roll_joint` is to be enabled, the corresponding joint definition in the MuJoCo XML must also be modified. For instance, this section:
 
-These points should be addressed in future technical notes or a dedicated FAQ section once the channel mapping and command structure are fully documented.
+```xml
+<body name="waist_roll_link" pos="-0.0039635 0 0.035">
+  <inertial pos="0 -0.000236 0.010111" quat="0.99979 0.020492 0 0" mass="0.047"
+    diaginertia="7.515e-06 6.40206e-06 3.98394e-06" />
+  <joint name="waist_roll_joint" pos="0 0 0" axis="1 0 0" limited="true" range="0 1e-6"
+    actuatorfrcrange="-50 50" class="torso_motor"/>  <!-- range="-0.52 0.52" -->
+
+would need to be updated by replacing `range="0 1e-6"` with `range="-0.52 0.52"` and removing `limited="true"`, in addition to updating the corresponding framework-side constraint definitions.
 
 ---
 
