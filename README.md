@@ -418,11 +418,11 @@ When running on the real robot:
 
 The current framework uses different channel counts depending on the role of each signal group:
 
-1. 29 channels correspond to the actively grouped body joints used by the current control structure: 6 for the left leg, 6 for the right leg, 3 for the waist, 7 for the left arm, and 7 for the right arm.
-2. 35 channels appear in internal constraint-related definitions because the framework reserves additional slots beyond the main 29 body joints, including placeholder entries for joints that are not currently used.
-3. 43 channels appear in the full command interface because the command bus also includes hand-related channels in addition to the body joints.
-4. Hand-related channels are present for interface completeness and future extensibility, but in the current version of the framework they are not actively commanded, so they remain zero.
-5. Waist roll and waist pitch are disabled in the current setup. Their limits are constrained in the framework configuration, and they are also effectively blocked in the MuJoCo XML model itself through near-zero joint ranges. Therefore, enabling them would require modifying both the constraint definitions and the XML model. As a concrete example, if `waist_roll_joint` is to be enabled, the corresponding joint definition in the MuJoCo XML must also be modified. For instance, this section:
+- 29 channels correspond to the actively grouped body joints used by the current control structure: 6 for the left leg, 6 for the right leg, 3 for the waist, 7 for the left arm, and 7 for the right arm.
+- 35 channels appear in internal constraint-related definitions because the framework reserves additional slots beyond the main 29 body joints, including placeholder entries for joints that are not currently used.
+- 43 channels appear in the full command interface because the command bus also includes hand-related channels in addition to the body joints.
+- Hand-related channels are present for interface completeness and future extensibility, but in the current version of the framework they are not actively commanded, so they remain zero.
+- Waist roll and waist pitch are disabled in the current setup. Their limits are constrained in the framework configuration, and they are also effectively blocked in the MuJoCo XML model itself through near-zero joint ranges. Therefore, enabling them would require modifying both the constraint definitions and the XML model. As a concrete example, if `waist_roll_joint` is to be enabled, the corresponding joint definition in the MuJoCo XML must also be modified. For instance, this section:
 
 ```xml
 <body name="waist_roll_link" pos="-0.0039635 0 0.035">
