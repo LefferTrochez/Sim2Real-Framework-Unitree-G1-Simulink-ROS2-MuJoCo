@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sim2Real Control Framework for Unitree G1</title>
+  <meta name="description" content="A MATLAB/Simulink-based Sim2Real control and research framework for the Unitree G1 using ROS 2 and MuJoCo." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">ICRA 2026 Project Page</p>
+      <h1>A MATLAB/Simulink-Based Sim2Real Control and Research Framework for the Unitree G1 Using ROS 2 and MuJoCo</h1>
+      <p class="subtitle">
+        A unified model-based environment for implementing, validating, debugging, and transferring humanoid control strategies from simulation to the real robot.
+      </p>
+
+      <div class="hero-links">
+        <a class="button primary" href="https://github.com/LefferTrochez/Sim2Real-Control-Framework-for-Unitree-G1-Simulink-ROS2-MuJoCo" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
+        <a class="button secondary" href="#demo">Watch Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <img src="assets/Pipeline.png" alt="Sim2Real pipeline for the Unitree G1 framework" class="hero-image" />
+      </div>
+    </section>
+
+    <section class="section" id="abstract">
+      <div class="container narrow">
+        <h2>Abstract</h2>
+        <p>
+          Control research on humanoid robots requires environments where control strategies can be designed, tuned, debugged, validated, and transferred to real hardware with minimal friction. For commercial platforms such as the Unitree G1, this process is often fragmented across separate tools for modeling, simulation, communication, visualization, and deployment, slowing down controller development and experimental iteration. This work presents a MATLAB/Simulink-based Sim2Real framework for the Unitree G1 that integrates MuJoCo and ROS 2 into a unified workflow for control-oriented research. The framework is organized around a modular Variant Subsystem that switches between a MuJoCo simulation backend and a ROS 2 real-robot backend while preserving compatible interfaces, enabling reuse of high-level control logic, monitoring, and system instrumentation across both domains. As a representative example, a standard ankle motion command task was validated both in simulation and on the real robot. The proposed framework establishes a practical model-based environment for implementing and evaluating control strategies on the Unitree G1, while providing an extensible basis for future estimation, stabilization, perception, and humanoid control modules.
+        </p>
+      </div>
+    </section>
+
+    <section class="section alt" id="contributions">
+      <div class="container">
+        <h2>Key Contributions</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Unified Workflow</h3>
+            <p>
+              Integrates MATLAB/Simulink, MuJoCo, and ROS 2 within a single model-based development environment.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Control-Oriented Design</h3>
+            <p>
+              Supports the implementation, tuning, debugging, and validation of humanoid control strategies in a structured block-based workflow.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Sim2Real Transfer</h3>
+            <p>
+              Preserves compatible interfaces between simulation and the real robot, reducing the gap between controller design and hardware execution.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Research Extensibility</h3>
+            <p>
+              Provides a foundation for future estimation, stabilization, perception, and advanced humanoid control modules.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="demo">
+      <div class="container">
+        <h2>Representative Example: Ankle Motion</h2>
+        <p class="section-text">
+          As a representative example, a standard ankle motion command task was validated in MuJoCo and executed on the real Unitree G1 through the same framework structure.
+        </p>
+
+        <div class="video-wrapper">
+          <video controls playsinline preload="metadata">
+            <source src="https://github.com/user-attachments/assets/04d95202-4c3e-444c-940a-4de99ef791b5" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="authors">
+      <div class="container">
+        <h2>Authors</h2>
+        <p class="authors">
+          Leffer Trochez, Nicanor Quijano, Jorge Lopez-Jimenez, Carlos Francisco Rodriguez
+        </p>
+        <p class="affiliation">
+          Universidad de los Andes, Bogotá D.C., Colombia
+        </p>
+        <p class="affiliation">
+          Faculty of Engineering
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="links">
+      <div class="container">
+        <h2>Project Links</h2>
+        <div class="link-grid">
+          <a class="link-card" href="https://github.com/LefferTrochez/Sim2Real-Control-Framework-for-Unitree-G1-Simulink-ROS2-MuJoCo" target="_blank" rel="noopener noreferrer">
+            <span class="link-title">GitHub Repository</span>
+            <span class="link-desc">Source code, resources, documentation, and demo material.</span>
+          </a>
+
+          <a class="link-card" href="#" target="_blank" rel="noopener noreferrer">
+            <span class="link-title">Poster</span>
+            <span class="link-desc">Add the poster PDF link here.</span>
+          </a>
+
+          <a class="link-card" href="#" target="_blank" rel="noopener noreferrer">
+            <span class="link-title">Paper / Abstract</span>
+            <span class="link-desc">Add the PaperPlaza or PDF link here.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="citation">
+      <div class="container narrow">
+        <h2>Citation</h2>
+        <p>
+          If you use this project in academic work, please cite the repository. A DOI-based citation can be added here once the first Zenodo-backed release is published.
+        </p>
+<pre><code>@software{trochez2026sim2real,
+  author       = {Leffer Trochez and Nicanor Quijano and Jorge Lopez-Jimenez and Carlos Francisco Rodriguez},
+  title        = {A MATLAB/Simulink-Based Sim2Real Control Framework for the Unitree G1 Using ROS 2 and MuJoCo},
+  year         = {2026},
+  version      = {1.0},
+  institution  = {Universidad de los Andes},
+  url          = {https://github.com/LefferTrochez/Sim2Real-Control-Framework-for-Unitree-G1-Simulink-ROS2-MuJoCo}
+}</code></pre>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p><strong>Leffer Trochez</strong></p>
+        <p>Electronic Engineer and M.Sc. in Electronic and Computer Engineering</p>
+        <p>Department of Electrical and Electronic Engineering</p>
+        <p>Universidad de los Andes, Bogotá D.C., Colombia</p>
+
+        <ul class="contact-list">
+          <li><a href="mailto:l.trochez@uniandes.edu.co">l.trochez@uniandes.edu.co</a></li>
+          <li><a href="https://www.linkedin.com/in/leffer-trochez/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=Ve1E4AEAAAAJ&hl=es&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+          <li><a href="https://orcid.org/0009-0002-5321-7652" target="_blank" rel="noopener noreferrer">ORCID</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section alt" id="acknowledgments">
+      <div class="container narrow">
+        <h2>Acknowledgments</h2>
+        <p>
+          The author would like to express sincere gratitude to Manoj Vasudevan for having planted the initial seed of this work through the MuJoCo Simulink Blockset, and to Álvaro Achury for his valuable support in the handling and operation of the real robot platform.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Leffer Trochez. Project page for the Sim2Real Control Framework for the Unitree G1.</p>
+    </div>
+  </footer>
+</body>
+</html>
