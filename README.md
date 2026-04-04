@@ -180,7 +180,7 @@ This framework uses the `unitree_hg` custom message package for ROS 2 communicat
 
 1. Run the script: `unitree_hg_msgs_creation.m`
 
-2. Download the [`unitree_hg`](https://github.com/unitreerobotics/unitree_ros2/tree/master/cyclonedds_ws/src/unitree/unitree_hg) folder from the Unitree ROS 2 repository and place it here.
+2. Download the [unitree_hg](https://github.com/unitreerobotics/unitree_ros2/tree/master/cyclonedds_ws/src/unitree/unitree_hg) folder from the Unitree ROS 2 repository and place it here.
 
 ```text
 C:\matlab_ros2_custom_msgs\src\unitree_hg
@@ -208,13 +208,13 @@ For better simulation performance on Windows, the following settings are recomme
 
 - Set Windows power mode to Best performance
 - In the NVIDIA Control Panel:
-  - go to Manage 3D settings
-  - set Preferred graphics processor to High-performance NVIDIA processor
-  - apply the same preference under Program Settings if needed
+  - Go to Manage 3D settings
+  - Set Preferred graphics processor to High-performance NVIDIA processor
+  - Apply the same preference under Program Settings if needed
 - In the MuJoCo Plant block:
-  - set FPS to 30
-  - disable Depth output
-  - disable VSync
+  - Set FPS to 30
+  - Disable Depth output
+  - Disable VSync
 
 ---
 
@@ -226,20 +226,13 @@ This section describes the basic execution workflow once the environment has alr
 
 1. Open the main Simulink framework contained in the `Sim2Real files` folder.
 2. Select the desired execution backend through the `RUN_MODE` setting inside the framework.
-3. After changing the execution mode, press:
-
-```text
-Ctrl + D
-```
-
-to update the model.
-4. Run the framework directly from Simulink.
+3. After changing the execution mode, press: `Ctrl + D` to update the model.
+4. Run the framework directly from Simulink (`Run`).
 
 > **Important**  
-> Do **not** rely on an external launcher for the main workflow. The intended procedure is to open the Simulink model and press **Run** from there.
+> Do not rely on an external launcher for the main workflow. The intended procedure is to open the Simulink model and press Run from there.
 
-### Run in MuJoCo
-
+### Run in RUN_MODE: MuJoCo
 To run the framework in simulation:
 
 1. Open the main Simulink model.
@@ -248,17 +241,12 @@ To run the framework in simulation:
 4. Run the model.
 5. Use the example files in the `examples` folder as references for minimal demonstrations and extensions.
 
-### Run on the Real Robot
+### Run in RUN_MODE: ROS
 
 To run the framework on the real Unitree G1 platform:
 
-1. Make sure the robot is in **development mode**.
-2. On the robot controller, enter development mode using:
-
-```text
-R2 + L2 for 20 seconds
-```
-
+1. Make sure the robot is in development mode.
+2. On the robot controller, enter development mode using `R2 + L2` for 20 seconds.
 3. Confirm that the ROS 2 communication environment is available and that the expected topics are active.
 4. Set `RUN_MODE` to the ROS 2 backend in Simulink.
 5. Press `Ctrl + D`.
