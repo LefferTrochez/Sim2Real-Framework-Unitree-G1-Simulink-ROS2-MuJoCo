@@ -1,6 +1,7 @@
 :root {
   --bg: #0f172a;
-  --surface: #111827;
+  --bg-soft: #1e293b;
+  --surface: #ffffff;
   --surface-soft: #f8fafc;
   --text: #111827;
   --text-light: #e5e7eb;
@@ -51,10 +52,11 @@ a:hover {
 
 .narrow {
   width: min(820px, calc(100% - 2rem));
+  margin: 0 auto;
 }
 
 .hero {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: linear-gradient(135deg, var(--bg), var(--bg-soft));
   color: white;
   padding: 5rem 0 4rem;
 }
@@ -69,7 +71,7 @@ a:hover {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2rem, 4vw, 3.3rem);
+  font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.15;
   max-width: 1000px;
 }
@@ -107,7 +109,7 @@ a:hover {
 }
 
 .button.secondary {
-  border: 1px solid rgba(255,255,255,0.35);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   color: white;
 }
 
@@ -132,6 +134,7 @@ a:hover {
 }
 
 .hero-image {
+  width: 100%;
   border-radius: var(--radius);
   box-shadow: var(--card-shadow);
   border: 1px solid var(--border);
@@ -145,7 +148,7 @@ a:hover {
 }
 
 .card {
-  background: white;
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.4rem;
@@ -185,19 +188,20 @@ a:hover {
 
 .link-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 1.5rem;
 }
 
 .link-card {
   display: block;
-  background: white;
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.2rem;
   box-shadow: var(--card-shadow);
   color: var(--text);
+  transition: 0.2s ease;
 }
 
 .link-card:hover {
@@ -224,10 +228,16 @@ pre {
   border-radius: 14px;
   overflow-x: auto;
   font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+code {
+  font-family: Consolas, Monaco, monospace;
 }
 
 .contact-list {
   padding-left: 1.2rem;
+  margin: 1rem 0 0;
 }
 
 .contact-list li {
@@ -235,7 +245,7 @@ pre {
 }
 
 .footer {
-  background: #0f172a;
+  background: var(--bg);
   color: #cbd5e1;
   padding: 1.3rem 0;
   text-align: center;
@@ -250,5 +260,25 @@ pre {
 
   .section {
     padding: 3.5rem 0;
+  }
+
+  .hero {
+    padding: 4rem 0 3.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section h2 {
+    font-size: 1.7rem;
   }
 }
