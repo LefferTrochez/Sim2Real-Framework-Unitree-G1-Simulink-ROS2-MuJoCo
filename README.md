@@ -502,13 +502,13 @@ Bogotá D.C., Colombia
 
 ## Citation
 
-If you use this repository in academic work, research projects, technical reports, or derivative software developments, please cite it appropriately.
+If you use this repository in academic work, research projects, technical reports, or derivative software developments, please cite the archived Zenodo release associated with this project.
 
-This repository includes a `CITATION.cff` file in the root of the repository so that GitHub can expose a standard citation format through the Cite this repository feature. Once a public release is archived through Zenodo, this section can be updated with the corresponding DOI-based citation.
+This repository includes a `CITATION.cff` file in the root of the repository so that GitHub can expose a standard citation format through the **Cite this repository** feature. In addition, the public release of this project has been archived in Zenodo and assigned a DOI for versioned citation.
 
 ### How to cite
 
-Until a DOI is available, the repository can be cited as software in the following format:
+The repository can be cited as software in the following format:
 
 ```bibtex
 @software{trochez2026sim2real,
@@ -516,14 +516,14 @@ Until a DOI is available, the repository can be cited as software in the followi
   title        = {A MATLAB/Simulink-Based Sim2Real Control Framework for the Unitree G1 Using ROS 2 and MuJoCo},
   year         = {2026},
   version      = {1.0},
-  institution  = {Universidad de los Andes},
-  url          = {https://github.com/LefferTrochez/Sim2Real-Control-Framework-for-Unitree-G1-Simulink-ROS2-MuJoCo}
+  doi          = {10.5281/zenodo.19422874},
+  url          = {https://doi.org/10.5281/zenodo.19422874}
 }
-```
 
 ### Citation note
 
-GitHub currently supports citation outputs based on `CITATION.cff`, including APA and BibTeX. If this framework contributes to a thesis, paper, report, or software-based research output, please cite the repository and, once available, its DOI-linked release record.
+
+GitHub supports citation outputs based on `CITATION.cff`, including APA and BibTeX. Zenodo archives public releases of the repository and assigns a persistent DOI for version-specific citation.
 
 ---
 
