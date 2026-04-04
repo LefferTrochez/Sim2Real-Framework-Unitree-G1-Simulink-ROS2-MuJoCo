@@ -71,11 +71,17 @@ The repository is organized as follows:
 .
 ├── docs/                # GitHub Pages source files for the project website
 ├── images/              # Figures, logos, and visual assets used in the README and documentation
-└── resources/           # Main technical folder of the project
-    ├── examples/        # Example files built on top of the original Sim2Real framework (ankle-motion)
-    ├── MuJoCo files/    # MuJoCo simulation resources, XML robot model, meshes, and related files
-    ├── ROS 2 files/     # Custom Unitree ROS 2 messages and scripts for message generation/integration
-    └── Sim2Real files/  # Core reusable Sim2Real base, Variant Subsystem, and support files
+├── resources/           # Main technical folder of the project
+│   ├── examples/        # Example files built on top of the original Sim2Real framework (ankle-motion)
+│   ├── MuJoCo files/    # MuJoCo simulation resources, XML robot model, meshes, and related files
+│   ├── ROS 2 files/     # Custom Unitree ROS 2 messages and scripts for message generation/integration
+│   └── Sim2Real files/  # Core reusable Sim2Real base, Variant Subsystem, and support files
+├── videos/              # Video assets and demonstration media used by the project
+├── Abstract.pdf         # Project abstract / submission summary
+├── ICRA 2026 poster.pdf # Poster version 1.0 of the project
+├── CITATION.cff         # Citation metadata for academic referencing
+├── LICENSE              # Apache-2.0 license
+└── README.md            # Main project documentation
 ```
 
 ---
@@ -99,17 +105,15 @@ Additional notes:
 Before using the framework, make sure the following software is available on your machine:
 
 - MATLAB R2025b
-  - This workflow is intended for the desktop version of MATLAB.
-  - MATLAB Online is not supported.
-- Windows 11
-- MuJoCo 3.3.2
+  - This workflow is intended for the desktop version of MATLAB. MATLAB Online is not supported.
+- MuJoCo 3.3.2 or earlier
 - Python 3.9 or 3.10
 - Visual Studio 2022 or newer with C++ support
 - Visual Studio Code
-- Git
+- Git (optional, for cloning the repository; otherwise, download the project as a .zip)
 - A machine with:
   - A dedicated GPU for smoother MuJoCo simulation
-  - A reasonably strong CPU for compilation and simulation tasks
+  - A reasonably strong CPU for compilation and simulation tasks (MATLAB/Simulink workflows are primarily CPU-based)
 - ROS 2 Jazzy Jalisco
   - This is the ROS 2 distribution used in the current MATLAB / ROS Toolbox workflow.
 
@@ -138,7 +142,7 @@ The following products may be useful for future extensions, but are not mandator
 
 #### Visual Studio 2022 or newer
 
-Install Visual Studio with the Desktop development with C++ workload enabled. Inside the installer, make sure the following components are available:
+Install Visual Studio with the Desktop development with C++ workload enabled. In the Visual Studio Installer, go to Workloads, find and select Desktop development with C++, and make sure the following components are available:
 
 - MSVC C++ compiler tools
 - Windows SDK
@@ -153,7 +157,7 @@ mex -setup c
 
 ### MuJoCo Installation
 
-To install the MuJoCo Simulink integration, follow the setup instructions provided in the MuJoCo Simulink Blockset repository included in this project's references. In addition, install the MuJoCo Python package from PowerShell:
+To install the MuJoCo Simulink integration, follow the setup instructions provided in the [MuJoCo Simulink Blockset repository](https://github.com/mathworks-robotics/mujoco-simulink-blockset/tree/main). In addition, install the MuJoCo Python package from PowerShell:
 
 ```powershell
 py -m pip install mujoco
