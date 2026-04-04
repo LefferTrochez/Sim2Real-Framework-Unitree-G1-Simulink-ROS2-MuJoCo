@@ -1,17 +1,32 @@
 # A MATLAB/Simulink-Based Sim2Real Control Framework for the Unitree G1 Using ROS 2 and MuJoCo
 
 <p align="center">
-  <img src="images/Pipeline.png" alt="Sim2Real Pipeline" width="1000">
+  <img src="images/Pipeline.png" alt="Sim2Real Pipeline" width="950">
 </p>
 
+
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0-blue" alt="Version">
-  <img src="https://img.shields.io/badge/MATLAB-Supported-orange" alt="MATLAB">
-  <img src="https://img.shields.io/badge/Simulink-Based-orange" alt="Simulink">
-  <img src="https://img.shields.io/badge/ROS2-Supported-blue" alt="ROS 2">
-  <img src="https://img.shields.io/badge/MuJoCo-Integrated-green" alt="MuJoCo">
-  <img src="https://img.shields.io/badge/license-Apache--2.0-red" alt="License">
-  <a href="https://doi.org/10.5281/zenodo.19422873"><img src="https://zenodo.org/badge/1200109573.svg" alt="DOI"></a>
+  <a href="https://github.com/LefferTrochez/Sim2Real-Control-Framework-for-Unitree-G1-Simulink-ROS2-MuJoCo/releases/tag/v1.0.0">
+    <img src="https://img.shields.io/badge/version-1.0-blue" alt="Version">
+  </a>
+  <a href="https://www.mathworks.com/products/matlab.html">
+    <img src="https://img.shields.io/badge/MATLAB-Supported-orange" alt="MATLAB">
+  </a>
+  <a href="https://www.mathworks.com/products/simulink.html">
+    <img src="https://img.shields.io/badge/Simulink-Based-orange" alt="Simulink">
+  </a>
+  <a href="https://docs.ros.org/">
+    <img src="https://img.shields.io/badge/ROS2-Supported-blue" alt="ROS 2">
+  </a>
+  <a href="https://mujoco.readthedocs.io/">
+    <img src="https://img.shields.io/badge/MuJoCo-Integrated-green" alt="MuJoCo">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/license-Apache--2.0-red" alt="License">
+  </a>
+  <a href="https://doi.org/10.5281/zenodo.19422873">
+    <img src="https://zenodo.org/badge/1200109573.svg" alt="DOI">
+  </a>
 </p>
 
 ---
