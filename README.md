@@ -178,23 +178,15 @@ C:\Users\YOUR_USERNAME\AppData\Local\Programs\Python\Python39\python.exe
 
 This framework uses the `unitree_hg` custom message package for ROS 2 communication. To generate the custom messages:
 
-1. Run:
+1. Run the script: `unitree_hg_msgs_creation.m`
 
-```matlab
-unitree_hg_msgs_creation
-```
-
-2. Download the `unitree_hg` folder from the Unitree ROS 2 repository and place it here:
+2. Download the [`unitree_hg`](https://github.com/unitreerobotics/unitree_ros2/tree/master/cyclonedds_ws/src/unitree/unitree_hg) folder from the Unitree ROS 2 repository and place it here.
 
 ```text
 C:\matlab_ros2_custom_msgs\src\unitree_hg
 ```
 
-3. Then run:
-
-```matlab
-generate_custom_msgs
-```
+3. Then run the script: `generate_custom_msgs.m`
 
 > **Note**  
 > The exact custom message generation workflow is tied to the contents of the `ROS 2 files` folder in this repository.
