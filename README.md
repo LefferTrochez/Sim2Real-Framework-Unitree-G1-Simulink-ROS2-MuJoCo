@@ -564,3 +564,11 @@ This project builds upon the following software tools, repositories, and officia
 7. Unitree Robotics. *unitree_sdk2*. GitHub repository. Available at: https://github.com/unitreerobotics/unitree_sdk2
 
 8. Unitree Robotics. *unitree_ros2*. GitHub repository. Available at: https://github.com/unitreerobotics/unitree_ros2
+
+9. TechEBlog. *Unitree G1 Humanoid Robot Gets Upgraded, Learns Kung Fu and Can Do Roundhouse Kicks*. Web article, 2026. Available at: https://www.techeblog.com/unitree-g1-humanoid-robot-kung-fu/
+
+---
+
+### Note on Visual Reference Material
+
+The external image referenced in Reference 9 was used only as a visual reference in this repository. It is not claimed as original content, and all rights remain with the corresponding copyright holder.
