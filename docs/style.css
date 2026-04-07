@@ -266,13 +266,11 @@ a:hover {
 
 .contact-logo {
   margin-top: 1.6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 
 .iele-logo {
-  width: min(180px, 55%);
+  width: min(540px, 100%);
   height: auto;
   display: block;
 }
@@ -331,6 +329,6 @@ a:hover {
   }
 
   .iele-logo {
-    width: min(150px, 65%);
+    width: min(320px, 100%);
   }
 }
