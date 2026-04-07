@@ -264,6 +264,19 @@ a:hover {
   vertical-align: middle;
 }
 
+.contact-logo {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iele-logo {
+  width: min(180px, 55%);
+  height: auto;
+  display: block;
+}
+
 .footer {
   background: var(--bg);
   color: #cbd5e1;
@@ -315,5 +328,9 @@ a:hover {
   .author-photo {
     width: 140px;
     height: 140px;
+  }
+
+  .iele-logo {
+    width: min(150px, 65%);
   }
 }
