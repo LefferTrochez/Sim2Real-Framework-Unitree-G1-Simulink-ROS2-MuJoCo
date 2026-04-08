@@ -5,13 +5,13 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/LefferTrochez/Sim2Real-Control-Framework-for-Unitree-G1-Simulink-ROS2-MuJoCo/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/version-1.0-blue" alt="Version" valign="middle"></a>
+  <a href="https://github.com/LefferTrochez/Sim2Real-Control-Framework-for-Unitree-G1-Simulink-ROS2-MuJoCo/releases/tag/v1.1.0"><img src="https://img.shields.io/badge/version-1.1-blue" alt="Version" valign="middle"></a>
   <a href="https://www.mathworks.com/products/matlab.html"><img src="https://img.shields.io/badge/MATLAB-Supported-orange" alt="MATLAB" valign="middle"></a>
   <a href="https://www.mathworks.com/products/simulink.html"><img src="https://img.shields.io/badge/Simulink-Based-orange" alt="Simulink" valign="middle"></a>
   <a href="https://docs.ros.org/"><img src="https://img.shields.io/badge/ROS2-Supported-blue" alt="ROS 2" valign="middle"></a>
   <a href="https://mujoco.readthedocs.io/"><img src="https://img.shields.io/badge/MuJoCo-Integrated-green" alt="MuJoCo" valign="middle"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-red" alt="License" valign="middle"></a>
-  <a href="https://doi.org/10.5281/zenodo.19422874"><img src="https://zenodo.org/badge/1200109573.svg" alt="DOI" valign="middle"></a>
+  <a href="https://doi.org/10.5281/zenodo.19462940"><img src="https://zenodo.org/badge/1200109573.svg" alt="DOI" valign="middle"></a>
   <a href="https://la.mathworks.com/matlabcentral/fileexchange/183593-sim2real-control-framework-unitree-g1-simulink-ros2-mujoco"><img src="https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg" alt="File Exchange" height="20" valign="middle"></a>
 
 </p>
@@ -40,7 +40,7 @@
 
 ## Introduction
 
-This repository presents Version 1.0 of a MATLAB/Simulink-based Sim2Real framework for the Unitree G1 humanoid robot, integrating MuJoCo and ROS 2 within a unified workflow for controller development, simulation-based validation, visualization, and real-robot deployment. The main objective of this repository is to provide a clean and control-oriented framework that preserves a common high-level interface across both simulation and real-robot execution backends.
+This repository presents Version 1.1.0 of a MATLAB/Simulink-based Sim2Real framework for the Unitree G1 humanoid robot, integrating MuJoCo and ROS 2 within a unified workflow for controller development, simulation-based validation, visualization, and real-robot deployment. The main objective of this repository is to provide a clean and control-oriented framework that preserves a common high-level interface across both simulation and real-robot execution backends.
 
 ---
 
@@ -55,10 +55,9 @@ The core idea of the framework is to allow the user to develop and organize cont
   <img src="images/Sim2Real.png" alt="Sim2Real Logo" width="300">
 </p>
 
-This design keeps the overall workflow modular, structured, and reusable. 
+This design keeps the overall workflow modular, structured, and reusable.
 
 ---
-
 
 ## Representative Example: Ankle Motion
 
@@ -123,7 +122,7 @@ Before using the framework, make sure the following software is available on you
 
 - MATLAB R2025b
   - This workflow is intended for the desktop version of MATLAB. MATLAB Online is not supported.
-- MuJoCo 3.3.2 
+- MuJoCo 3.3.2
 - Python 3.9 or 3.10
 - Visual Studio 2022 or newer with C++ support
 - Visual Studio Code
@@ -249,6 +248,7 @@ This section describes the basic execution workflow once the environment has alr
 > Do not rely on an external launcher for the main workflow. The intended procedure is to open the Simulink model and press Run from there.
 
 ### Run in RUN_MODE: MuJoCo
+
 To run the framework in simulation:
 
 1. Open the main Simulink model.
@@ -399,7 +399,6 @@ rmw_cyclonedds_cpp
 
 4. Recreate the ROS Toolbox Python environment if necessary.
 
-
 ---
 
 ## Technical Notes
@@ -450,7 +449,7 @@ The current framework uses different channel counts depending on the role of eac
 
 would need to be updated by replacing `range="0 1e-6"` with `range="-0.52 0.52"` and removing `limited="true"`, in addition to updating the corresponding framework-side constraint definitions.
 - Why must the files remain inside `resources`, and what must be updated if filenames change? The initialization logic assumes `resources` as the project root. Starting from the `.slx` model location, the `InitFcn` traverses upward until it finds the parent folder named `resources`, and then performs a recursive search inside that directory to locate `unitree_G1.xml`. The `.slx` model and `launcher.mlx` must remain in the same folder, since the launcher is referenced explicitly from the model directory. If the launcher filename is changed, the corresponding line in the `InitFcn` must also be updated (currently line 56). Likewise, if any additional live scripts called from the launcher are renamed, their names must also be updated inside `launcher.mlx`.
-  
+
 ---
 
 ## Future Work
@@ -484,7 +483,7 @@ Planned future developments include:
 ## Contact
 
 Leffer Trochez <br>
-Electronic Engineer, M.Sc. in Electronic and Computer Engineering, and Admitted to the Ph.D. in Engineering 
+Electronic Engineer, M.Sc. in Electronic and Computer Engineering, and Admitted to the Ph.D. in Engineering
 Universidad de los Andes  
 Faculty of Engineering  
 Department of Electrical and Electronic Engineering  
@@ -517,13 +516,13 @@ The repository can be cited as software in the following format:
   author       = {Leffer Trochez and Nicanor Quijano and Jorge Lopez-Jimenez and Carlos Francisco Rodriguez},
   title        = {A MATLAB/Simulink-Based Sim2Real Control Framework for the Unitree G1 Using ROS 2 and MuJoCo},
   year         = {2026},
-  version      = {1.0},
-  doi          = {10.5281/zenodo.19422874},
-  url          = {https://doi.org/10.5281/zenodo.19422874}
+  version      = {1.1.0},
+  doi          = {10.5281/zenodo.19462940},
+  url          = {https://doi.org/10.5281/zenodo.19462940}
 }
 ```
-### Citation note
 
+### Citation note
 
 GitHub supports citation outputs based on `CITATION.cff`, including APA and BibTeX. Zenodo archives public releases of the repository and assigns a persistent DOI for version-specific citation.
 
