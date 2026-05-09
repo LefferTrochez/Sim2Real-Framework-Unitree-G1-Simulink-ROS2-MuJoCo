@@ -11,7 +11,7 @@
   <a href="https://docs.ros.org/"><img src="https://img.shields.io/badge/ROS2-Supported-blue" alt="ROS 2" valign="middle"></a>
   <a href="https://mujoco.readthedocs.io/"><img src="https://img.shields.io/badge/MuJoCo-Integrated-green" alt="MuJoCo" valign="middle"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-red" alt="License" valign="middle"></a>
-  <a href="https://doi.org/10.5281/zenodo.20101555"><img src="https://zenodo.org/badge/1200109573.svg" alt="DOI" valign="middle"></a>
+  <a href="https://doi.org/10.5281/zenodo.20101555"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20101555-blue" alt="DOI" valign="middle"></a>
   <a href="https://la.mathworks.com/matlabcentral/fileexchange/183593-sim2real-control-framework-unitree-g1-simulink-ros2-mujoco"><img src="https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg" alt="File Exchange" height="20" valign="middle"></a>
 
 </p>
